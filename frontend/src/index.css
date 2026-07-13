@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+:root{
+    --background:#09090B;
+    --card:#111113;
+    --border:#27272A;
+    --text:#FAFAFA;
+    --muted:#A1A1AA;
+}
+
+body{
+    background:var(--background);
+    color:var(--text);
+    font-family:Geist,sans-serif;
+}
