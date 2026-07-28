@@ -265,31 +265,24 @@ http://127.0.0.1:8000/docs
 
 Dashboard
 
-(Add Dashboard Screenshot)
 
 Prompt Builder
 
-(Add Prompt Builder Screenshot)
 
 Prompt Library
 
-(Add Prompt Library Screenshot)
 
 Prompt Optimizer
 
-(Add Optimizer Screenshot)
 
 AI Playground
 
-(Add Playground Screenshot)
 
 Analytics
 
-(Add Analytics Screenshot)
 
 Settings
 
-(Add Settings Screenshot)
 
 ---
 
