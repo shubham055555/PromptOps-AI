@@ -32,19 +32,28 @@ app = FastAPI(
 # Create all database tables
 Base.metadata.create_all(bind=engine)
 
-# CORS
+# =========================
+# CORS Configuration
+# =========================
+origins = [
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
+
+    # Vercel Frontend
+    "https://prompt-ops-ai-gules.vercel.app",
+]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:5173",
-        "http://127.0.0.1:5173",
-    ],
+    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
+# =========================
 # API Routes
+# =========================
 app.include_router(prompt_router, prefix="/api")
 app.include_router(history_router, prefix="/api")
 app.include_router(library_router, prefix="/api")
