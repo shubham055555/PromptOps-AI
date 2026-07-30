@@ -15,6 +15,7 @@ genai.configure(
 model = genai.GenerativeModel("gemini-2.5-flash")
 
 
+
 def generate_prompt(data):
 
     prompt = f"""
