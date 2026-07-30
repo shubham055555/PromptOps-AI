@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: promptops-backend
+    name: promptops-Backend
     runtime: python
     rootDir: backend
     buildCommand: pip install -r requirements.txt
