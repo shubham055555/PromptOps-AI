@@ -1,214 +1,169 @@
 # PromptOps AI
 
-## AI-Powered Prompt Engineering Workspace
-
-PromptOps AI is a modern AI-powered Prompt Engineering Workspace developed as part of a Prompt Engineering Internship. The platform helps users create, optimize, organize, test, and analyze AI prompts using Google's Gemini API through a centralized web application.
+PromptOps AI is a full-stack AI-powered Prompt Engineering Platform that helps users create, optimize, manage, test, and analyze AI prompts efficiently. The platform is designed to improve prompt quality and provide an organized workflow for AI prompt engineering.
 
 ---
 
-# Project Overview
+## Project Overview
 
-PromptOps AI simplifies the complete Prompt Engineering workflow by providing a single platform for prompt creation, optimization, testing, storage, analytics, and configuration.
+PromptOps AI provides an end-to-end environment where users can:
+
+- Build AI prompts
+- Optimize prompts
+- Store prompts in a library
+- Test prompts using Google Gemini
+- Manage conversations
+- Track analytics
+- Export data
+
+The application follows a modern full-stack architecture with a React frontend and FastAPI backend.
 
 ---
 
-# Features
+## Features
 
-## Dashboard
+### Prompt Builder
 
+- Create prompts
+- Save prompts
+- Generate AI prompts
+
+### Prompt Library
+
+- Store prompts
+- View saved prompts
+- Reuse prompts
+
+### Prompt Optimizer
+
+- Improve prompt quality
+- Rewrite prompts
+- Make prompts more structured
+
+### AI Playground
+
+- Test prompts
+- Generate AI responses
+- Experiment with prompt engineering
+
+### Chat Management
+
+- Create conversations
+- Rename conversations
+- Delete conversations
+- Store chat history
+
+### Analytics Dashboard
+
+- Total Conversations
+- Total Messages
 - Prompt Statistics
-- AI Calls Overview
-- Success Rate
-- Activity Charts
-- Recent Activity
+- AI Usage Analytics
+
+### Settings
+
+- Application settings
+- Data management
+- Export functionality
 
 ---
 
-## Prompt Builder
+## Tech Stack
 
-- Generate AI Prompts
-- Save Prompt History
-- Structured Prompt Generation
+### Frontend
 
----
-
-## Prompt Library
-
-- Save Prompts
-- Search Prompts
-- Category Management
-- Delete Prompts
-- Reuse Prompt Templates
-
----
-
-## Prompt Optimizer
-
-- Optimize Existing Prompts
-- Improve Prompt Quality
-- AI-Based Prompt Enhancement
-
----
-
-## AI Playground
-
-- Chat with Google Gemini
-- Conversation History
-- Auto Conversation Title
-- Rename Conversation
-- Delete Conversation
-- Search Conversations
-- Persistent Chat Storage
-
----
-
-## Analytics
-
-- KPI Cards
-- Daily Activity
-- Weekly Activity
-- Monthly Activity
-- Prompt Categories
-- AI vs User Messages
-- Recent Activity
-- Most Used Prompt
-- Most Used AI Model
-- Average Response Time
-- CSV Export
-
----
-
-## Settings
-
-- AI Model Configuration
-- Temperature Configuration
-- System Prompt
-- API Key Management
-- Appearance Settings
-- Data Export
-- Data Cleanup
-- About Section
-
----
-
-# Technology Stack
-
-## Frontend
-
-- React.js
+- React
 - Vite
-- Tailwind CSS
-- Zustand
-- React Router DOM
 - Axios
-- Recharts
-- Lucide React
+- CSS
 
-## Backend
+### Backend
 
-- Python
 - FastAPI
 - SQLAlchemy
-- Pydantic
+- REST API
 
-## Database
+### Database
 
 - SQLite
 
-## AI Integration
+### AI Integration
 
 - Google Gemini API
 
-## Development Tools
+### Deployment
 
-- Visual Studio Code
+- Railway (Backend)
+- Vercel (Frontend)
+
+### Version Control
+
 - Git
 - GitHub
-- Swagger UI
 
 ---
 
-# System Architecture
+## Project Architecture
 
 ```
-                 User
-
-                   │
-
-                   ▼
-
-          React Frontend
-
-                   │
-
-                   ▼
-
-            FastAPI Backend
-
-        ┌──────────┴──────────┐
-
-        ▼                     ▼
-
-  Google Gemini API      SQLite Database
+React Frontend (Vercel)
+        │
+        ▼
+FastAPI Backend (Railway)
+        │
+        ▼
+Google Gemini API
+        │
+        ▼
+SQLite Database
 ```
 
 ---
 
-# Project Structure
+## Folder Structure
 
 ```
 PromptOps-AI
-
 │
-
-├── backend
-│   ├── api
-│   ├── services
-│   ├── models
-│   ├── schemas
-│   ├── db
+├── backend/
+│   ├── app/
+│   ├── api/
+│   ├── db/
+│   ├── models/
+│   ├── schemas/
+│   ├── services/
 │   └── main.py
 │
-├── frontend
-│   ├── src
-│   │   ├── components
-│   │   ├── features
-│   │   ├── layouts
-│   │   ├── pages
-│   │   ├── routes
-│   │   ├── services
-│   │   └── store
+├── frontend/
+│   ├── src/
+│   ├── public/
+│   ├── package.json
+│   └── vite.config.js
 │
-├── README.md
-└── .gitignore
+├── screenshots/
+│   ├── dashboard.png
+│   ├── prompt-builder.png
+│   ├── prompt-library.png
+│   ├── prompt-optimizer.png
+│   ├── ai-playground.png
+│   ├── analytics.png
+│   └── settings.png
+│
+└── README.md
 ```
 
 ---
 
-# Installation
+## Installation
 
-## Clone Repository
+### Clone Repository
 
 ```bash
 git clone https://github.com/shubham055555/PromptOps-AI.git
 ```
 
----
-
-## Frontend Setup
-
 ```bash
-cd frontend
-
-npm install
-
-npm run dev
-```
-
-The frontend will start on:
-
-```
-http://localhost:5173
+cd PromptOps-AI
 ```
 
 ---
@@ -217,132 +172,154 @@ http://localhost:5173
 
 ```bash
 cd backend
+```
 
+Create virtual environment
+
+```bash
+python -m venv venv
+```
+
+Activate virtual environment
+
+Windows
+
+```bash
+venv\Scripts\activate
+```
+
+Install dependencies
+
+```bash
 pip install -r requirements.txt
+```
 
+Run backend
+
+```bash
 uvicorn app.main:app --reload
 ```
 
-The backend will start on:
+---
 
-```
-http://127.0.0.1:8000
-```
+## Frontend Setup
 
-Swagger Documentation:
-
-```
-http://127.0.0.1:8000/docs
+```bash
+cd frontend
 ```
 
----
+Install dependencies
 
-# API Modules
+```bash
+npm install
+```
 
-- Prompt Builder API
-- Prompt Library API
-- Prompt Optimizer API
-- AI Playground API
-- Conversation API
-- Messages API
-- Analytics API
-- Settings API
-- Data Management API
+Run frontend
+
+```bash
+npm run dev
+```
 
 ---
 
-# Database Tables
+## Environment Variables
 
-- Prompt
-- Prompt Library
-- Conversation
-- Message
-- App Settings
+Frontend (.env)
 
----
+```env
+VITE_API_URL=https://your-backend-url/api
+```
 
-# Screenshots
+Backend (.env)
 
-## Dashboard
-
-![Dashboard](./screenshots/dashboard.png)
+```env
+GEMINI_API_KEY=YOUR_GEMINI_API_KEY
+```
 
 ---
 
-## Prompt Builder
+## API Documentation
 
-![Prompt Builder](./screenshots/prompt-builder.png)
+Swagger Documentation
 
----
-
-## Prompt Library
-
-![Prompt Library](./screenshots/prompt-library.png)
+```
+https://your-backend-url/docs
+```
 
 ---
 
-## Prompt Optimizer
+## Deployment
 
-![Prompt Optimizer](./screenshots/prompt-optimizer.png)
+### Frontend
 
----
+Vercel
 
-## AI Playground
+### Backend
 
-![AI Playground](./screenshots/ai-playground.png)
-
----
-
-## Analytics
-
-![Analytics](./screenshots/analytics.png)
+Railway
 
 ---
 
-## Settings
+## Screenshots
 
-![Settings](./screenshots/settings.png)
+### Dashboard
+
+![Dashboard](screenshots/dashboard.png)
+
+### Prompt Builder
+
+![Prompt Builder](screenshots/prompt-builder.png)
+
+### Prompt Library
+
+![Prompt Library](screenshots/prompt-library.png)
+
+### Prompt Optimizer
+
+![Prompt Optimizer](screenshots/prompt-optimizer.png)
+
+### AI Playground
+
+![AI Playground](screenshots/ai-playground.png)
+
+### Analytics
+
+![Analytics](screenshots/analytics.png)
+
+### Settings
+
+![Settings](screenshots/settings.png)
 
 ---
 
-# Future Enhancements
+## Future Improvements
 
-- User Authentication
+- JWT Authentication
 - PostgreSQL Database
-- Docker Deployment
-- Cloud Deployment
-- Multiple AI Models
+- Docker Support
+- CI/CD Pipeline
 - Team Collaboration
+- Multi AI Model Support
 - Prompt Versioning
-- PDF Report Export
-- Prompt Sharing
-- Workspace Management
+- User Authentication
+- Role-Based Access Control
 
 ---
 
-# Learning Outcomes
+## Author
 
-This project demonstrates practical experience in:
+**Shubham Sharma**
 
-- Prompt Engineering
-- Frontend Development
-- Backend Development
-- REST API Development
-- Database Design
-- AI Integration
-- State Management
-- Software Architecture
+B.Tech CSE (AI & ML)
 
----
+AI Prompt Engineering Intern
 
-# Developed By
+GitHub
 
-Shubham Sharma
-
-Prompt Engineering Intern
+https://github.com/shubham055555
 
 ---
 
-# License
+## License
 
-This project was developed for educational and internship learning purposes.
+This project is developed for educational and internship purposes.
