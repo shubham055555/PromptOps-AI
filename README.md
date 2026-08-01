@@ -263,26 +263,45 @@ http://127.0.0.1:8000/docs
 
 # Screenshots
 
-Dashboard
+## Dashboard
 
+![Dashboard](./screenshots/dashboard.png)
 
-Prompt Builder
+---
 
+## Prompt Builder
 
-Prompt Library
+![Prompt Builder](./screenshots/prompt-builder.png)
 
+---
 
-Prompt Optimizer
+## Prompt Library
 
+![Prompt Library](./screenshots/prompt-library.png)
 
-AI Playground
+---
 
+## Prompt Optimizer
 
-Analytics
+![Prompt Optimizer](./screenshots/prompt-optimizer.png)
 
+---
 
-Settings
+## AI Playground
 
+![AI Playground](./screenshots/ai-playground.png)
+
+---
+
+## Analytics
+
+![Analytics](./screenshots/analytics.png)
+
+---
+
+## Settings
+
+![Settings](./screenshots/settings.png)
 
 ---
 
