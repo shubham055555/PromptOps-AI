@@ -272,32 +272,25 @@ Railway
 ## Screenshots
 
 ### Dashboard
-
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](./screenshot/dashboard.png)
 
 ### Prompt Builder
-
-![Prompt Builder](screenshots/prompt-builder.png)
+![Prompt Builder](./screenshot/prompt-builder.png)
 
 ### Prompt Library
-
-![Prompt Library](screenshots/prompt-library.png)
+![Prompt Library](./screenshot/prompt-library.png)
 
 ### Prompt Optimizer
-
-![Prompt Optimizer](screenshots/prompt-optimizer.png)
+![Prompt Optimizer](./screenshot/prompt-optimizer.png)
 
 ### AI Playground
-
-![AI Playground](screenshots/ai-playground.png)
+![AI Playground](./screenshot/ai-playground.png)
 
 ### Analytics
-
-![Analytics](screenshots/analytics.png)
+![Analytics](./screenshot/analytics.png)
 
 ### Settings
-
-![Settings](screenshots/settings.png)
+![Settings](./screenshot/settings.png)
 
 ---
 
