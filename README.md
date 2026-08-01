@@ -4,8 +4,6 @@ PromptOps AI is a full-stack AI-powered Prompt Engineering Platform that helps u
 
 ---
 
-# PromptOps AI
-
 ![React](https://img.shields.io/badge/Frontend-React-blue)
 ![FastAPI](https://img.shields.io/badge/Backend-FastAPI-green)
 ![SQLite](https://img.shields.io/badge/Database-SQLite-blue)
